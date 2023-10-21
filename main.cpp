@@ -4,7 +4,7 @@
 using namespace std;
 
 bool canPlacePiece(int i, int j, vector<vector<char>> &board) {
-    return i >=0 && i< 3 && j>=0 && j< 3 && board[i][j] == '-';
+    return i >= 0 && i < 3 && j >= 0 && j < 3 && board[i][j] == '-';
 }
 
 void makeMove(vector<vector<char>> &board, char c) {
