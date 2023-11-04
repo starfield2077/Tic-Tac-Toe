@@ -12,15 +12,9 @@ class Player {
 public:
     char piece;
 
-    Player(char piece) : piece(piece) {}
+    Player(char piece);
 
-    vector<int> makeMove() {
-        int playerNum = piece == 'X' ? 1 : 2;
-        cout << "Player" << playerNum << endl << "Place (row, col):\n";
-        int i, j;
-        cin >> i >> j;
-        return {i, j};
-    }
+    vector<int> makeMove();
 };
 
 #endif //TIC_TAC_TOE_PLAYER_H
